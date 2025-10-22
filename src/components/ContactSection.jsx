@@ -30,19 +30,19 @@ const ContactSection = () => {
   // 📤 send to Laravel API
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus("⏳ Sending...");
+    setStatus("Sending...");
 
     try {
       const res = await axios.post("http://127.0.0.1:8000/api/message", formData);
       if (res.data.success) {
-        setStatus("✅ Message sent successfully!");
+        setStatus("Message sent successfully!");
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
-        setStatus("⚠️ Something went wrong.");
+        setStatus("Something went wrong.");
       }
     } catch (error) {
       console.error(error);
-      setStatus("❌ Failed to send message.");
+      setStatus("Failed to send message.");
     }
   };
 

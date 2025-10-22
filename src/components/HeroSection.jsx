@@ -7,14 +7,19 @@ import {
   name,
   personeName,
 } from "./data/constants";
-import { FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
-import { link } from "framer-motion/client";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const buttons = [
   { id: 1, icon: <FaGithub />, name: "GitHub", link: "https://github.com/nawalkz" },
-  { id: 2, icon: <FaFacebook />, name: "Facebook", link: "https://www.facebook.com/Nawal Kz" },
-  { id: 3, icon: <FaInstagram />, name: "Instagram", link: "https://www.instagram.com/kz.nawal0" },
+{ 
+  id: 2, 
+  icon: <FaLinkedin />, 
+  name: "LinkedIn", 
+  link: "https://www.linkedin.com/in/nawal-kzouzou/" 
+},
+  { id: 3, icon: <FaInstagram />, name: "Instagram", link: "https://www.instagram.com/devbynawal" },
 ];
+
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
