@@ -244,8 +244,8 @@ const Hero = () => {
                           <div className="loader">Loading ...</div>
                         </div>
                       )}
-                     <img
-  src="./heroPic.jpg"
+                    <img
+  src="/heroPic.jpg"
   alt="hero picture"
   width={400}
   onLoad={() => {
@@ -257,6 +257,7 @@ const Hero = () => {
     display: isLoaded ? "block" : "none",
   }}
 />
+
 
                     </motion.div>
                   </div>

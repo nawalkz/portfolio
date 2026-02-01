@@ -1,49 +1,50 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Variants } from "./data/constants";
+const baseUrl = import.meta.env.BASE_URL;
 
 const ProjectsSection = () => {
  const projects = [
   {
-  id: 1,
-  title: "Cooperative Management System",
-  description:
-    "Created a complete management system for a cooperative covering sales, payments, revenues, and archives. Implemented advanced data tracking and archiving features using Laravel and MySQL.",
-  picture: "./image4.png",
-  tools: ["Laravel", "MySQL", "Bootstrap", "JavaScript"],
-},
-{
-  id: 2,
-  title: "Library Management System",
-  description:
-    "Built a web platform for managing books, borrowing and returning processes, and user notifications. Created an intuitive dashboard with Laravel and Bootstrap.",
-  picture: "./image1.png",
-  tools: ["Laravel", "Bootstrap", "MySQL", "JavaScript"],
-},
-{
-  id: 3,
-  title: "Meeting Management Platform",
-  description:
-    "Designed and developed a platform to organize meetings, manage users, rooms, and notifications. Integrated a dynamic filtering system for efficient management.",
-  picture: "./image2.png",
-  tools: ["Laravel", "MySQL", "TailwindCSS", "JavaScript"],
-},
-{
-  id: 4,
-  title: "Travel Management Application",
-  description:
-    "Developed a collaborative web application for managing travel planning, including dynamic filters and booking features. Built a responsive interface for user interaction.",
-  picture: "./image3.png",
-  tools: ["Laravel", "Bootstrap", "AJAX", "MySQL"],
-},
-{
-  id: 5,
-  title: "Point of Sale (POS) System",
-  description:
-    "Developed a desktop-style web application to manage product sales, orders, and payments. Implemented stock tracking and transaction history using Laravel and MySQL.",
-  picture: "./image.png",
-  tools: ["Laravel", "MySQL", "Bootstrap", "JavaScript"],
-},
+    id: 1,
+    title: "Cooperative Management System",
+    description:
+      "Created a complete management system for a cooperative covering sales, payments, revenues, and archives. Implemented advanced data tracking and archiving features using Laravel and MySQL.",
+    picture: baseUrl + "image4.png",
+    tools: ["Laravel", "MySQL", "Bootstrap", "JavaScript"],
+  },
+  {
+    id: 2,
+    title: "Library Management System",
+    description:
+      "Built a web platform for managing books, borrowing and returning processes, and user notifications. Created an intuitive dashboard with Laravel and Bootstrap.",
+    picture: baseUrl + "image1.png",
+    tools: ["Laravel", "Bootstrap", "MySQL", "JavaScript"],
+  },
+  {
+    id: 3,
+    title: "Meeting Management Platform",
+    description:
+      "Designed and developed a platform to organize meetings, manage users, rooms, and notifications. Integrated a dynamic filtering system for efficient management.",
+    picture: baseUrl + "image2.png",
+    tools: ["Laravel", "MySQL", "TailwindCSS", "JavaScript"],
+  },
+  {
+    id: 4,
+    title: "Travel Management Application",
+    description:
+      "Developed a collaborative web application for managing travel planning, including dynamic filters and booking features. Built a responsive interface for user interaction.",
+    picture: baseUrl + "image3.png",
+    tools: ["Laravel", "Bootstrap", "AJAX", "MySQL"],
+  },
+  {
+    id: 5,
+    title: "Point of Sale (POS) System",
+    description:
+      "Developed a desktop-style web application to manage product sales, orders, and payments. Implemented stock tracking and transaction history using Laravel and MySQL.",
+    picture: baseUrl + "image.png",
+    tools: ["Laravel", "MySQL", "Bootstrap", "JavaScript"],
+  },
 ];
   const [[page], setPage] = useState([0, 0]);
 
