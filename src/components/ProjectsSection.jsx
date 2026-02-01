@@ -15,6 +15,14 @@ const ProjectsSection = () => {
   },
   {
     id: 2,
+    title: "Cooperative Management System",
+    description:
+      "Created a complete management system for a cooperative covering sales, payments, revenues, and archives. Implemented advanced data tracking and archiving features using Laravel and MySQL.",
+    picture: baseUrl + "image5.png",
+    tools: ["Laravel", "MySQL", "Bootstrap", "JavaScript"],
+  },
+  {
+    id: 3,
     title: "Library Management System",
     description:
       "Built a web platform for managing books, borrowing and returning processes, and user notifications. Created an intuitive dashboard with Laravel and Bootstrap.",
@@ -22,7 +30,7 @@ const ProjectsSection = () => {
     tools: ["Laravel", "Bootstrap", "MySQL", "JavaScript"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Meeting Management Platform",
     description:
       "Designed and developed a platform to organize meetings, manage users, rooms, and notifications. Integrated a dynamic filtering system for efficient management.",
@@ -30,7 +38,7 @@ const ProjectsSection = () => {
     tools: ["Laravel", "MySQL", "TailwindCSS", "JavaScript"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Travel Management Application",
     description:
       "Developed a collaborative web application for managing travel planning, including dynamic filters and booking features. Built a responsive interface for user interaction.",
