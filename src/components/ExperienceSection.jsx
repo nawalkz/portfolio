@@ -1,6 +1,6 @@
 import React from "react";
 
-const experience = [
+const experiences = [
   {
     id: 1,
     duration: "2025 – Present",
