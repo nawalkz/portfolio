@@ -244,8 +244,8 @@ const Hero = () => {
                           <div className="loader">Loading ...</div>
                         </div>
                       )}
-                    <img
-  src="/heroPic.jpg"
+                     <img
+  src={import.meta.env.BASE_URL + "heroPic.jpg"}
   alt="hero picture"
   width={400}
   onLoad={() => {
@@ -253,9 +253,6 @@ const Hero = () => {
     setIsLoadeding(false);
   }}
   className="rounded-full object-cover"
-  style={{
-    display: isLoaded ? "block" : "none",
-  }}
 />
 
 
