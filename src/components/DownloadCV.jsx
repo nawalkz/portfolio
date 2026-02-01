@@ -42,13 +42,12 @@ const DownloadCV = () => {
   };
 
   const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = `${window.location.origin}/cv_nawal.pdf`;
-    link.download = "cv_nawal.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  const link = document.createElement("a");
+  link.href = import.meta.env.BASE_URL + "cv_nawal.pdf";
+  link.download = "cv_nawal.pdf";
+  link.click();
+};
+
 
   return (
     <div

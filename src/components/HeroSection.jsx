@@ -9,6 +9,8 @@ import {
 } from "./data/constants";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
+
+
 const buttons = [
   { id: 1, icon: <FaGithub />, name: "GitHub", link: "https://github.com/nawalkz" },
 { 
@@ -242,20 +244,20 @@ const Hero = () => {
                           <div className="loader">Loading ...</div>
                         </div>
                       )}
-                      <img
-                        src="/heroPic.jpg"
-                        alt="hero picture"
-                        width={400}
-                        height="auto"
-                        onLoad={() => {
-                          setIsLoaded(true);
-                          setIsLoadeding(false);
-                        }}
-                        className="rounded-full object-cover"
-                        style={{
-                          display: isLoaded ? "block" : "none",
-                        }}
-                      />
+                     <img
+  src="./heroPic.jpg"
+  alt="hero picture"
+  width={400}
+  onLoad={() => {
+    setIsLoaded(true);
+    setIsLoadeding(false);
+  }}
+  className="rounded-full object-cover"
+  style={{
+    display: isLoaded ? "block" : "none",
+  }}
+/>
+
                     </motion.div>
                   </div>
                 </div>
