@@ -4,56 +4,56 @@ import { Variants } from "./data/constants";
 const baseUrl = import.meta.env.BASE_URL;
 
 const ProjectsSection = () => {
- const projects = [
-  {
-    id: 1,
-    title: "Cooperative Management System",
-    description:
-      "Created a complete management system for a cooperative covering sales, payments, revenues, and archives. Implemented advanced data tracking and archiving features using Laravel and MySQL.",
-    picture: baseUrl + "image4.PNG",
-    tools: ["Laravel", "MySQL", " Tailwind CSS", "JavaScript"],
-  },
-  {
-    id: 2,
-    title: "Cooperative Management System",
-    description:
-      "Created a complete management system for a cooperative covering sales, payments, revenues, and archives. Implemented advanced data tracking and archiving features using Laravel and MySQL.",
-    picture: baseUrl + "image5.png",
-    tools: ["Laravel", "MySQL", " Tailwind CSS", "JavaScript"],
-  },
-  {
-    id: 3,
-    title: "Library Management System",
-    description:
-      "Built a web platform for managing books, borrowing and returning processes, and user notifications. Created an intuitive dashboard with Laravel and Bootstrap.",
-    picture: baseUrl + "image1.png",
-    tools: ["Laravel", "Bootstrap", "MySQL", "JavaScript"],
-  },
-  {
-    id: 4,
-    title: "Meeting Management Platform",
-    description:
-      "Designed and developed a platform to organize meetings, manage users, rooms, and notifications. Integrated a dynamic filtering system for efficient management.",
-    picture: baseUrl + "image2.png",
-    tools: ["Laravel", "MySQL", "TailwindCSS", "JavaScript"],
-  },
-  {
-    id: 5,
-    title: "Travel Management Application",
-    description:
-      "Developed a collaborative web application for managing travel planning, including dynamic filters and booking features. Built a responsive interface for user interaction.",
-    picture: baseUrl + "image3.png",
-    tools: ["Laravel", "Bootstrap", "AJAX", "MySQL"],
-  },
-  {
-    id: 5,
-    title: "Point of Sale (POS) System",
-    description:
-      "Developed a desktop-style web application to manage product sales, orders, and payments. Implemented stock tracking and transaction history using Laravel and MySQL.",
-    picture: baseUrl + "image.png",
-    tools: ["Laravel", "MySQL", "Bootstrap", "JavaScript"],
-  },
-];
+  const projects = [
+    {
+      id: 1,
+      title: "Cooperative Management System",
+      description:
+        "Created a complete management system for a cooperative covering sales, payments, revenues, and archives. Implemented advanced data tracking and archiving features using Laravel and MySQL.",
+      picture: baseUrl + "image4.PNG",
+      tools: ["Laravel", "MySQL", " Tailwind CSS", "JavaScript"],
+    },
+    {
+      id: 2,
+      title: "Cooperative Management System",
+      description:
+        "Created a complete management system for a cooperative covering sales, payments, revenues, and archives. Implemented advanced data tracking and archiving features using Laravel and MySQL.",
+      picture: baseUrl + "image5.png",
+      tools: ["Laravel", "MySQL", " Tailwind CSS", "JavaScript"],
+    },
+    {
+      id: 3,
+      title: "Library Management System",
+      description:
+        "Built a web platform for managing books, borrowing and returning processes, and user notifications. Created an intuitive dashboard with Laravel and Bootstrap.",
+      picture: baseUrl + "image1.png",
+      tools: ["Laravel", "Bootstrap", "MySQL", "JavaScript"],
+    },
+    {
+      id: 4,
+      title: "Meeting Management Platform",
+      description:
+        "Designed and developed a platform to organize meetings, manage users, rooms, and notifications. Integrated a dynamic filtering system for efficient management.",
+      picture: baseUrl + "image2.png",
+      tools: ["Laravel", "MySQL", "TailwindCSS", "JavaScript"],
+    },
+    {
+      id: 5,
+      title: "Travel Management Application",
+      description:
+        "Developed a collaborative web application for managing travel planning, including dynamic filters and booking features. Built a responsive interface for user interaction.",
+      picture: baseUrl + "image3.png",
+      tools: ["Laravel", "Bootstrap", "AJAX", "MySQL"],
+    },
+    {
+      id: 5,
+      title: "Point of Sale (POS) System",
+      description:
+        "Developed a desktop-style web application to manage product sales, orders, and payments. Implemented stock tracking and transaction history using Laravel and MySQL.",
+      picture: baseUrl + "image.png",
+      tools: ["Laravel", "MySQL", "Bootstrap", "JavaScript"],
+    },
+  ];
   const [[page], setPage] = useState([0, 0]);
 
   const projectIndex = (page + projects.length) % projects.length;
@@ -104,32 +104,31 @@ const ProjectsSection = () => {
           </button>
         </div>
         {/**Project Image */}
-        <img src={projects[projectIndex].picture} alt={projects[projectIndex].title} 
-        className="max-w-[100%] md:max-w-[100%] h-[200px] md:h-[400px] object-cover rounded-lg"
+        <img src={projects[projectIndex].picture} alt={projects[projectIndex].title}
+          className="max-w-[100%] md:max-w-[100%] h-[200px] md:h-[400px] object-cover rounded-lg"
         />
 
         {/**Project Title */}
         <h2 className="text-white text-3xl mt-4 font-semibold">
-        {projects[projectIndex].title} 
+          {projects[projectIndex].title}
         </h2>
 
         {/**Project Description */}
         <p className="text-white mt-2 text-lg text-center max-w-lg">
-        {projects[projectIndex].description} 
+          {projects[projectIndex].description}
         </p>
 
         {/**Tools Used */}
         <div className="text-primary text-md mt-2 font-bold">
-            <strong className="mr-5"> Tools :</strong>
-            {projects[projectIndex].tools.join(", ")} 
+          <strong className="mr-5"> Tools :</strong>
+          {projects[projectIndex].tools.join(", ")}
         </div>
 
         <div className="flex justify-center mt-10 z-[100] relative">
-            {projects.map((_,index) =>(
-                <div key={index} className={`w-3 h-3 rounded-full mx-1 ${
-                    index === projectIndex ? "bg-primary":"bg-white/50"
-                }`}></div>
-            ))}
+          {projects.map((_, index) => (
+            <div key={index} className={`w-3 h-3 rounded-full mx-1 ${index === projectIndex ? "bg-primary" : "bg-white/50"
+              }`}></div>
+          ))}
         </div>
       </div>
     </div>
