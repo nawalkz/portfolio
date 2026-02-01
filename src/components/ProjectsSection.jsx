@@ -11,7 +11,7 @@ const ProjectsSection = () => {
     description:
       "Created a complete management system for a cooperative covering sales, payments, revenues, and archives. Implemented advanced data tracking and archiving features using Laravel and MySQL.",
     picture: baseUrl + "image4.PNG",
-    tools: ["Laravel", "MySQL", "Bootstrap", "JavaScript"],
+    tools: ["Laravel", "MySQL", " Tailwind CSS", "JavaScript"],
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const ProjectsSection = () => {
     description:
       "Created a complete management system for a cooperative covering sales, payments, revenues, and archives. Implemented advanced data tracking and archiving features using Laravel and MySQL.",
     picture: baseUrl + "image5.png",
-    tools: ["Laravel", "MySQL", "Bootstrap", "JavaScript"],
+    tools: ["Laravel", "MySQL", " Tailwind CSS", "JavaScript"],
   },
   {
     id: 3,
