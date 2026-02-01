@@ -1,13 +1,19 @@
 import React from "react";
 const education = [
-  {
+    {
     id: 1,
+    duration: "2025 – Present",
+    school: "École SupManagement, Fès",
+    post: "Licence en Ingénierie Informatique (en cours)",
+  },
+  {
+    id: 2,
     duration: "2023 – 2025",
     school: "OFPPT – Specialized Institute of Applied Technology",
     post: "Diploma in Digital Development (Specialization in Full-Stack Web Development)",
   },
   {
-    id: 2,
+    id: 3,
     duration: "2023",
     school: "High School – Baccalaureate in Physical Sciences (Arabic Option)",
     post: "Baccalaureate in Physical Sciences, Arabic option",

@@ -43,8 +43,8 @@ const DownloadCV = () => {
 
   const handleDownload = () => {
   const link = document.createElement("a");
-  link.href = import.meta.env.BASE_URL + "cv_nawal.pdf";
-  link.download = "cv_nawal.pdf";
+  link.href = import.meta.env.BASE_URL + "naoual kzouzou.pdf";
+  link.download = "naoual kzouzou.pdf";
   link.click();
 };
 

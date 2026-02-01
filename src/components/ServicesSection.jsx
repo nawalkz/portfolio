@@ -24,11 +24,11 @@ const ServicesSection = () => {
             key={id} className="border-2 border-primary backdrop-blur-sm bg-white/30 p-8 rounded-3xl"
           >
             <div className="flex">
-                <img src={src} width={50} height={50} alt="service" className="w-10 h-10 object-contain block" />
-                <h3 className="text-xl font-semibold text-white ml-5">{title}</h3>
+              <img src={src} width={50} height={50} alt="service" className="w-10 h-10 object-contain block" />
+              <h3 className="text-xl font-semibold text-white ml-5">{title}</h3>
             </div>
             <div className="space-y-2 break-all">
-                <p className="leading-8 text-white">{description}</p>
+              <p className="leading-8 text-white">{description}</p>
             </div>
           </motion.div>
         ))}

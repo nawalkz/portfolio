@@ -17,9 +17,9 @@ const buttons = [
     id: 2,
     icon: <FaLinkedin />,
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/nawal-kzouzou/"
+    link: "https://www.linkedin.com/in/naoual-kzouzou/"
   },
-  { id: 3, icon: <FaInstagram />, name: "Instagram", link: "https://www.instagram.com/devbynawal" },
+  { id: 3, icon: <FaInstagram />, name: "Instagram", link: "https://www.instagram.com/kz.nawal0" },
 ];
 
 

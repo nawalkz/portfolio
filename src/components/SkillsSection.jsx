@@ -14,7 +14,7 @@ const SkillsSection = () => {
     { id: 7, icon: "https://img.icons8.com/plasticine/100/087ea4/react.png" },
     { id: 8, icon: "https://img.icons8.com/color/96/bootstrap.png" },
 
-    // 🗄️ Databases
+    //  Databases
     { id: 9, icon: "https://img.icons8.com/fluency/96/mysql-logo.png" },
     { id: 10, icon: "https://img.icons8.com/color/96/mongodb.png" },
 
@@ -42,6 +42,8 @@ const SkillsSection = () => {
           </figure>
         ))}
       </div>
+
+      
     </section>
   );
 };

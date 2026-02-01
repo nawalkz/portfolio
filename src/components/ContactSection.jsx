@@ -2,11 +2,16 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Variants, randomNumberBetween, contactText1 } from "./data/constants";
 import { motion, stagger, useAnimate } from "framer-motion";
-import { FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const buttons = [
   { id: 1, icon: <FaGithub />, name: "GitHub", link: "https://github.com/nawalkz" },
-  { id: 2, icon: <FaFacebook />, name: "Facebook", link: "https://www.facebook.com/Nawal Kz" },
+    {
+      id: 2,
+      icon: <FaLinkedin />,
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/naoual-kzouzou/"
+    },
   { id: 3, icon: <FaInstagram />, name: "Instagram", link: "https://www.instagram.com/kz.nawal0" },
 ];
 
