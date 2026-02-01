@@ -10,7 +10,7 @@ const ProjectsSection = () => {
     title: "Cooperative Management System",
     description:
       "Created a complete management system for a cooperative covering sales, payments, revenues, and archives. Implemented advanced data tracking and archiving features using Laravel and MySQL.",
-    picture: baseUrl + "image4.png",
+    picture: baseUrl + "image4.PNG",
     tools: ["Laravel", "MySQL", "Bootstrap", "JavaScript"],
   },
   {
