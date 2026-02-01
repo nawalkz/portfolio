@@ -62,7 +62,7 @@ export const randomNumberBetween = (min, max) => {
 };
 
 export const role = "FULLSTACK DEVELOPER".split("");
-export const description = "Junior Full-Stack Developer, graduate in digital development, passionate about creating web applications.Hands-on experience through academic and personal projects, including library management, meeting management, point of sale systems, and cooperative management.Skilled in HTML, CSS, JavaScript, PHP, Python, and Laravel.Autonomous, detail-oriented, and highly motivated with a strong ability to learn quickly.".split("");
+export const description = "Junior Full-Stack Web Developer with hands-on experience gained through academic and personal projects. Focused on creating reliable, scalable, and user-oriented web applications. Highly motivated and eager to grow professionally in web development".split("");
 export const name = "Hello , I'm".split("");
 export const personeName = "Nawal".split("");
 

@@ -1,23 +1,41 @@
 import React from "react";
 
-const experiences = [
+const experience = [
   {
     id: 1,
     duration: "2025 – Present",
     company: "Ryd Mediatech",
-    post: "Web Development Intern",
-    description:
-      "Developed a management system for a cooperative, including modules for sales, payments, revenues, and archives. Implemented tracking and archiving features using Laravel and MySQL.",
+    post: "Web Development Intern – Full-Stack",
+    description: [
+      "Improved and optimized existing functionalities",
+      "Designed and added advanced tracking and archiving modules",
+      "Presented and demonstrated the solution to partner cooperatives",
+      "Analyzed real client needs and adapted the application independently",
+    ],
   },
   {
     id: 2,
+    duration: "2025 – 2 months",
+    company: "Ryd Mediatech",
+    post: "Web Development Intern – Cooperative Management Project",
+    description: [
+      "Initial design and development of a web application for cooperative management",
+      "Management of sales, payments, and archiving",
+      "Development using Laravel, JavaScript, HTML, Tailwind CSS, and MySQL",
+    ],
+  },
+  {
+    id: 3,
     duration: "2025",
     company: "École Nationale d’Architecture (ENA)",
-    post: "Final-Year Internship – Web Developer",
-    description:
-      "Created a web application for managing a library, covering books, borrow/return processes, and notifications. Designed a responsive interface using Laravel and Bootstrap.",
+    post: "Web Development Intern (Final Year Internship)",
+    description: [
+      "Development of a web application for managing books, loans/returns, and notifications",
+      "Implementation of an intuitive user dashboard",
+    ],
   },
 ];
+
 
 const ExperienceSection = () => {
   return (
