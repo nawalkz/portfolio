@@ -13,12 +13,12 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const buttons = [
   { id: 1, icon: <FaGithub />, name: "GitHub", link: "https://github.com/nawalkz" },
-{ 
-  id: 2, 
-  icon: <FaLinkedin />, 
-  name: "LinkedIn", 
-  link: "https://www.linkedin.com/in/nawal-kzouzou/" 
-},
+  {
+    id: 2,
+    icon: <FaLinkedin />,
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/nawal-kzouzou/"
+  },
   { id: 3, icon: <FaInstagram />, name: "Instagram", link: "https://www.instagram.com/devbynawal" },
 ];
 
@@ -208,58 +208,58 @@ const Hero = () => {
               </div>
             </div>
             <div className="lg:h-full md:flex">
-                <div className="flex w-full h-96 min-h-[24rem] lg:min-h-[none] lg:w-full items-center relative">
-                  <div
-                    className="absolute z-0 top-1/2 -translate-y-1/2 w-5/6 right-0 h-[calc(80%+20px)] bg-primary blur-3xl rounded-full
+              <div className="flex w-full h-96 min-h-[24rem] lg:min-h-[none] lg:w-full items-center relative">
+                <div
+                  className="absolute z-0 top-1/2 -translate-y-1/2 w-5/6 right-0 h-[calc(80%+20px)] bg-primary blur-3xl rounded-full
                   hidden lg:block
                   "
-                  ></div>
-                  <div
-                    className="absolute max-h-full z-10 p-2 -translate-y-1/2 top-1/2 lg:right-3 md:right-40 sm:right-16 rounded-full
+                ></div>
+                <div
+                  className="absolute max-h-full z-10 p-2 -translate-y-1/2 top-1/2 lg:right-3 md:right-40 sm:right-16 rounded-full
                    shadow-lg border-2 border-primary
                   "
+                >
+                  <motion.div
+                    initial={false}
+                    animate={
+                      isLoaded && isInView
+                        ? {
+                          WebkitMaskImage:
+                            "repeating-linear-gradient(to right,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 0px,rgba(0,0,0,1) 0px,rgba(0,0,0,1) 30px)",
+                          maskImage:
+                            "repeating-linear-gradient(to right,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 0px,rgba(0,0,0,1) 0px,rgba(0,0,0,1) 30px )",
+                        }
+                        : {
+                          WebkitMaskImage:
+                            "repeating-linear-gradient(to right,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 30px,rgba(0,0,0,1) 30px,rgba(0,0,0,1) 30px )",
+                          maskImage:
+                            "repeating-linear-gradient(to right,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 30px,rgba(0,0,0,1) 30px,rgba(0,0,0,1) 30px )",
+                        }
+                    }
+                    transition={{ duration: 1, delay: 1 }}
+                    onViewportEnter={() => setIsInView(true)}
                   >
-                    <motion.div
-                      initial={false}
-                      animate={
-                        isLoaded && isInView
-                          ? {
-                              WebkitMaskImage:
-                                "repeating-linear-gradient(to right,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 0px,rgba(0,0,0,1) 0px,rgba(0,0,0,1) 30px)",
-                              maskImage:
-                                "repeating-linear-gradient(to right,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 0px,rgba(0,0,0,1) 0px,rgba(0,0,0,1) 30px )",
-                            }
-                          : {
-                              WebkitMaskImage:
-                                "repeating-linear-gradient(to right,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 30px,rgba(0,0,0,1) 30px,rgba(0,0,0,1) 30px )",
-                              maskImage:
-                                "repeating-linear-gradient(to right,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 30px,rgba(0,0,0,1) 30px,rgba(0,0,0,1) 30px )",
-                            }
-                      }
-                      transition={{ duration: 1, delay: 1 }}
-                      onViewportEnter={() => setIsInView(true)}
-                    >
-                      {isLoadeding && (
-                        <div className="flex justify-center items-center h-full">
-                          <div className="loader">Loading ...</div>
-                        </div>
-                      )}
-                     <img
-  src={import.meta.env.BASE_URL + "heroPic.jpg"}
-  alt="hero picture"
-  width={400}
-  onLoad={() => {
-    setIsLoaded(true);
-    setIsLoadeding(false);
-  }}
-  className="rounded-full object-cover"
-/>
+                    {isLoadeding && (
+                      <div className="flex justify-center items-center h-full">
+                        <div className="loader">Loading ...</div>
+                      </div>
+                    )}
+                    <img
+                      src={import.meta.env.BASE_URL + "heroPic.jpg"}
+                      alt="hero picture"
+                      width={400}
+                      onLoad={() => {
+                        setIsLoaded(true);
+                        setIsLoadeding(false);
+                      }}
+                      className="rounded-full object-cover"
+                    />
 
 
-                    </motion.div>
-                  </div>
+                  </motion.div>
                 </div>
               </div>
+            </div>
           </div>
         </div>
       </section>
